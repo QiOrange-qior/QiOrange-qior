@@ -1,3 +1,2 @@
 ![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=QiOrange-qior&theme=tokyonight&repo=QR-ify)  ![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=QiOrange-qior&theme=tokyonight&repo=Findex) 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=QiOrange-qior&theme=tokyonight)        ![GitHub stats](https://github-readme-stats.vercel.app/api?username=QiOrange-qior&theme=tokyonight&show_icons=true)
-
