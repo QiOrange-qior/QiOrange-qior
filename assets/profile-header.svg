@@ -1,20 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="240" viewBox="0 0 960 240" role="img" aria-labelledby="title desc">
-<title id="title">Dylan / 气橙 — AI Game Art and Creative Assets</title>
-<desc id="desc">Characters, props, worlds, motion and 3D. Product thinking meets creative exploration.</desc>
-<rect x="1" y="1" width="958" height="238" rx="18" fill="#fafbfc" stroke="#d8dee4"/>
-<g fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
-<text x="36" y="43" font-size="13" letter-spacing="2">DYLAN / 气橙</text>
-<text x="36" y="106" font-size="48" font-weight="650" letter-spacing="-1">AI GAME ART</text>
-<text x="38" y="143" font-size="24" fill="#57606a">Ideas become worlds. Worlds become assets.</text>
-<path d="M38 174H595" stroke="#d8dee4"/>
-<text x="38" y="204" font-size="12" letter-spacing="1.5" fill="#57606a">CHARACTERS / PROPS / WORLDS / MOTION / 3D</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="390" viewBox="0 0 960 390" role="img" aria-labelledby="title desc">
+<title id="title">Dylan / 气橙 — 把想法，做成世界。</title>
+<desc id="desc">AI 游戏美术与创意资产。角色草图、场景图层和动作关键帧组成的创作工作台示意。</desc>
+<defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#e1dfd7"/></pattern></defs>
+<rect x="1" y="1" width="958" height="388" rx="22" fill="#fbf8f2" stroke="#e3dfd6"/>
+<path d="M500 1h437a22 22 0 0 1 22 22v344a22 22 0 0 1-22 22H500Z" fill="url(#grid)"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" fill="#293e3b">
+<text x="36" y="43" font-size="14" letter-spacing="2">DYLAN / 气橙</text>
+<rect x="36" y="83" width="142" height="25" rx="5" fill="#e1eee7"/>
+<text x="49" y="100" font-size="11" letter-spacing="1.5" fill="#387b6b">THE CREATIVE DESK</text>
+<text x="34" y="167" font-size="46" font-weight="650" letter-spacing="-2">把想法，</text>
+<text x="34" y="225" font-size="46" font-weight="650" letter-spacing="-2">做成世界。</text>
+<text x="36" y="265" font-size="18" fill="#63746e">AI 游戏美术 / 创意资产 / 产品探索</text>
+<text x="36" y="297" font-size="13" fill="#7a8179" letter-spacing=".6">From a spark to a world worth exploring.</text>
 </g>
-<g stroke="#8c959f" stroke-width="1.5" stroke-linejoin="round" fill="none">
-<path d="m750 56 66 38-66 38-66-38z" fill="#eaeef2"/>
-<path d="m684 94 66 38v72l-66-38z" fill="#ffffff"/>
-<path d="m750 132 66-38v72l-66 38z" fill="#f0f2f4"/>
-<path d="m750 68 46 26-46 26-46-26z" stroke-dasharray="3 4"/>
-<path d="M660 180l90 52 90-52M660 69l90-52 90 52" stroke="#d8dee4"/>
-<path d="M750 132v72M684 94l66 38 66-38"/>
-<circle cx="750" cy="132" r="5" fill="#57606a" stroke="none"/>
-</g></svg>
+<!-- Creative workflow illustration, not portfolio samples. -->
+<g transform="translate(522 61) rotate(-7 88 100)">
+<rect width="170" height="206" rx="8" fill="#eee7f1" stroke="#c6b9cc"/>
+<path d="M15 29h140M85 45v130M32 107h106" stroke="#c9bed0" stroke-dasharray="3 4"/>
+<text x="14" y="20" font-family="monospace" font-size="10" fill="#7d648a">01 / CHARACTER</text>
+<g stroke="#7d648a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="85" cy="69" r="16"/><path d="M72 86l-17 40 19-5-9 46m33-81 17 40-19-5 9 46M72 89h26l5 49H67z"/>
+<path d="M68 101l-25 30m59-30 27 24M60 169h13m26 0h14"/>
+</g>
+<path d="M15 188h49m8 0h18" stroke="#baa9c3" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g transform="translate(673 86) rotate(6 110 96)">
+<rect width="232" height="210" rx="8" fill="#fffefd" stroke="#bacdc3"/>
+<text x="15" y="22" font-family="monospace" font-size="10" fill="#4c786a">02 / WORLD LAYERS</text>
+<path d="M16 33h200" stroke="#e2e7e1"/>
+<path d="m29 155 88-49 88 49-88 43z" fill="#e4eee4" stroke="#b3c5b4"/>
+<path d="m29 140 88-49 88 49-88 43z" fill="#f5e6cf" stroke="#d4c3a7"/>
+<path d="m29 125 88-49 88 49-88 43z" fill="#d7e8dc" stroke="#9fbcad"/>
+<path d="m87 113 30-17 30 17-30 17z" fill="#f7f5ed" stroke="#7a9a89"/>
+<path d="m87 113v-39l30-18v40m30 17V74l-30-18" fill="#f7f5ed" stroke="#7a9a89"/>
+<path d="m87 74 30 17 30-17m-30 17v39" fill="none" stroke="#7a9a89"/>
+<path d="m79 74 38-33 38 33-38 17z" fill="#d58165" stroke="#b46e56"/>
+<path d="M163 119v-20m-9 7 9-23 9 23z" stroke="#74997b" fill="#98b29a" stroke-linejoin="round"/>
+</g>
+<g transform="translate(574 277)">
+<rect width="306" height="55" rx="8" fill="#fffefd" stroke="#dbcec1"/>
+<text x="13" y="18" font-family="monospace" font-size="9" fill="#8d7767">03 / MOTION</text>
+<path d="M14 35h277" stroke="#ded8cb" stroke-width="2"/>
+<g fill="#d58165"><path d="m35 29 6 6-6 6-6-6zM108 29l6 6-6 6-6-6zM213 29l6 6-6 6-6-6z"/></g>
+<path d="M163 24v22" stroke="#4f877c" stroke-width="2"/>
+</g>
+<path d="M36 337H467" stroke="#dfded4"/>
+<g font-family="monospace" font-size="11" fill="#747d71" letter-spacing="1"><text x="36" y="365">IMAGINE</text><text x="181" y="365">DESIGN</text><text x="326" y="365">MAKE IT PLAY</text></g>
+<path d="M111 361h49m-5-4 5 4-5 4M245 361h60m-5-4 5 4-5 4" fill="none" stroke="#bdc4b6"/>
+</svg>

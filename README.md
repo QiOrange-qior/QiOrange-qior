@@ -1,130 +1,61 @@
-<p align="center">
-  <img src="./assets/profile-header.svg" width="100%" alt="Dylan / 气橙 — AI 游戏美术与创意资产" />
+<p>
+  <img src="./assets/profile-header.svg" width="100%" alt="Dylan / 气橙：把想法，做成世界。AI 游戏美术、创意资产与产品探索。" />
 </p>
 
-<p align="center">
-  <strong>从一个游戏创意出发，让角色、道具、场景与动态共同构成一个世界。</strong>
-</p>
-<p align="center">
-  产品经理 &amp; 创作者 · 关注 AI 游戏美术、创意素材与产品体验
-</p>
+**我是 Dylan / 气橙，产品经理与创作者。** 关注一个游戏创意，如何长出有联系的角色、道具、场景与动态表现。
 
-<p align="center">
-  <a href="#creative-fields">创作方向</a> &nbsp; / &nbsp;
-  <a href="#creative-process">创作路径</a> &nbsp; / &nbsp;
-  <a href="#github-dashboard">GitHub 看板</a> &nbsp; / &nbsp;
-  <a href="#connect">交流</a>
+<p>
+  <img src="./assets/focus-character.svg" width="148" alt="角色与设定" />
+  <img src="./assets/focus-props.svg" width="148" alt="道具与图标" />
+  <img src="./assets/focus-worlds.svg" width="148" alt="场景与空间" />
+  <img src="./assets/focus-motion.svg" width="148" alt="视频与动态" />
+  <img src="./assets/focus-3d.svg" width="148" alt="3D 与材质" />
 </p>
 
-<br />
+[正在探索](#on-the-desk) &nbsp; / &nbsp; [打开工作台](#explore) &nbsp; / &nbsp; [创作轨迹](#making-log) &nbsp; / &nbsp; [交流](#connect)
 
-<a id="creative-fields"></a>
-## 创作方向 <sub>Creative fields</sub>
+<a id="on-the-desk"></a>
+## ✦ 正在探索 <sub>On the desk</sub>
 
-<table>
-<tr>
-<td width="50%" valign="top">
+- **让角色有来处。** 从世界设定和玩家行为，推导角色身份、服装与随身工具。
+- **让资产说同一种语言。** 将轮廓、材质与视觉符号，延伸到道具、图标和场景模块。
+- **让画面发生变化。** 探索动作、镜头、空间与反馈，怎样把静态设定变成可理解的体验。
 
-### ◇ 角色与世界观
-**Characters & Lore**
-
-从主题、身份与行为出发，探索角色轮廓、服装、职业与世界设定之间的关系。
-
-<sub>角色设定 · 造型语言 · 叙事线索</sub>
-</td>
-<td width="50%" valign="top">
-
-### ⊞ 道具与视觉符号
-**Props & Visual Systems**
-
-让装备、工具、资源图标与界面元素共享一套设计语言，清楚传达用途与状态。
-
-<sub>道具设计 · 图标体系 · 界面素材</sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### ▧ 场景与空间
-**Environments & Worlds**
-
-从玩家行动和空间关系出发，探索建筑、地形与模块如何组成可读的游戏环境。
-
-<sub>场景概念 · 模块组合 · 空间叙事</sub>
-</td>
-<td width="50%" valign="top">
-
-### ↗ 动态与立体表达
-**Motion & 3D Exploration**
-
-通过动作、镜头、材质与光照，探索视觉设定如何延展成动态表现与立体资产。
-
-<sub>视频与动作 · 特效反馈 · 3D 与材质</sub>
-</td>
-</tr>
-</table>
-
-> **作品与实验正在整理。** 后续按游戏主题呈现完整案例：世界设定、角色与资产、场景应用，以及动态与制作过程。
-
-<br />
-
-<a id="creative-process"></a>
-## 从创意到资产 <sub>Creative process</sub>
-
-<table>
-<tr>
-<th align="left">01 / 定义世界</th>
-<th align="left">02 / 建立语言</th>
-<th align="left">03 / 放入场景</th>
-<th align="left">04 / 观察与迭代</th>
-</tr>
-<tr>
-<td>主题、玩法与玩家行为</td>
-<td>角色、道具与视觉规则</td>
-<td>空间、组合与动态反馈</td>
-<td>取舍、调整与过程记录</td>
-</tr>
-</table>
-
-我关注资产之间的联系：角色为何携带某件工具，场景如何提示行动，道具怎样延续到图标，动作又如何表达状态变化。
+> **作品与实验整理中。** 将围绕具体游戏主题，呈现从世界设定到资产应用的完整过程。
 
 <details>
-<summary><strong>工具与实践笔记</strong> · 展开查看后续分享方向</summary>
+<summary>↳ 一个案例会怎样展开</summary>
 
-- **AI 创作工作流**：需求与参考 → 生成与筛选 → 调整与整理。
-- **Skills 与辅助工具**：服务于具体创作任务的方法、模板与工具。
-- **实践笔记**：角色一致性、风格探索、镜头表达、资产组织与产品体验。
+**世界与玩法 → 角色与资产 → 场景与动态 → 取舍与迭代**
+
+每个案例标明实际参与内容和完成状态；概念图、静态分镜、模型与可运行项目分别说明。同步整理创作中用到的 AI 工作流、Skills 与实践笔记。
 
 </details>
 
-<br />
+<a id="explore"></a>
+## ↗ 打开工作台 <sub>Explore</sub>
 
-<a id="github-dashboard"></a>
-## GitHub 看板 <sub>Public activity</sub>
+**[公开项目](https://github.com/QiOrange-qior?tab=repositories&type=source)**  
+浏览已有的代码、工具与实验。
 
-<p>
-  <a href="https://github.com/QiOrange-qior?tab=repositories">
-    <img src="./assets/github-dashboard.svg" width="100%" alt="GitHub 公开仓库数据看板：非 Fork 仓库、Fork、Stars、关注者、主要语言和最近仓库推送日期；更新时间见图中" />
-  </a>
-</p>
+**[灵感收藏](https://github.com/QiOrange-qior?tab=stars)**  
+看看我关注的开源项目与工具。
 
-<sub>每日更新公开数据。Stars 与语言分布仅统计非 Fork 仓库；语言按仓库数量计，不代表熟练度。最近推送是仓库更新日期，不等同于个人贡献。</sub>
+<a id="making-log"></a>
+## ◷ 创作轨迹 <sub>The making log</sub>
 
-<p>
-  <a href="https://github.com/QiOrange-qior?tab=repositories">浏览公开仓库 ↗</a>
-  &nbsp; · &nbsp;
-  <a href="https://github.com/QiOrange-qior/QiOrange-qior/actions/workflows/profile-dashboard.yml">查看看板更新状态 ↗</a>
-</p>
+<a href="https://github.com/QiOrange-qior?tab=overview">
+  <img src="./assets/github-dashboard.svg" width="100%" alt="过去一年 GitHub 贡献记录：贡献总数、活跃日和逐月贡献数量；完整日期与更新时间见图中。" />
+</a>
 
-<br />
+<sub>GitHub 活动按月汇总，每日更新；首尾月份可能不完整。数据反映 GitHub API 可见的贡献记录，不代表全部创作活动。 [更新状态](https://github.com/QiOrange-qior/QiOrange-qior/actions/workflows/profile-dashboard.yml)</sub>
 
 <a id="connect"></a>
 ---
 
-**一起聊聊 AI 游戏美术与创意工具。**
+**一起聊聊，怎样让一个创意长成一个世界。**  
+AI 游戏美术 · 创意素材 · 视频与 3D · 创作工具与产品
 
-欢迎交流角色与场景、创意素材、视频与 3D，以及相关工具和产品。
+[在 GitHub 找到我 ↗](https://github.com/QiOrange-qior)
 
-[GitHub](https://github.com/QiOrange-qior) · [公开仓库](https://github.com/QiOrange-qior?tab=repositories)
-
-<sub>Dylan / 气橙 · 持续探索，逐步成形。</sub>
+<sub>Dylan / 气橙 · Imagine. Design. Make it play.</sub>
