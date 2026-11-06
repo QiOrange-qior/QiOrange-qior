@@ -12,7 +12,7 @@
   <img src="./assets/focus-3d.svg" width="148" alt="3D 与材质" />
 </p>
 
-[正在探索](#on-the-desk) &nbsp; / &nbsp; [打开工作台](#explore) &nbsp; / &nbsp; [创作轨迹](#making-log) &nbsp; / &nbsp; [交流](#connect)
+[正在探索](#on-the-desk) &nbsp; / &nbsp; [技能与工具](#skills) &nbsp; / &nbsp; [打开工作台](#explore) &nbsp; / &nbsp; [创作轨迹](#making-log) &nbsp; / &nbsp; [交流](#connect)
 
 <a id="on-the-desk"></a>
 ## ✦ 正在探索 <sub>On the desk</sub>
@@ -31,6 +31,19 @@
 每个案例标明实际参与内容和完成状态；概念图、静态分镜、模型与可运行项目分别说明。同步整理创作中用到的 AI 工作流、Skills 与实践笔记。
 
 </details>
+
+<a id="skills"></a>
+## ⌘ 技能与工具 <sub>Skills & Tools</sub>
+
+![Product Design](https://img.shields.io/badge/Product%20Design-387b6b?style=flat-square)
+![AI Game Art](https://img.shields.io/badge/AI%20Game%20Art-7d648a?style=flat-square)
+![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-7d648a?style=flat-square)
+![AI Coding](https://img.shields.io/badge/AI%20Coding-293e3b?style=flat-square)
+![Workflow Automation](https://img.shields.io/badge/Workflow%20Automation-387b6b?style=flat-square)
+![Skills](https://img.shields.io/badge/Skills-7d648a?style=flat-square)
+![MCP](https://img.shields.io/badge/MCP-387b6b?style=flat-square)
+![Codex](https://img.shields.io/badge/Codex-293e3b?style=flat-square)
+![Claude](https://img.shields.io/badge/Claude-b46e56?style=flat-square)
 
 <a id="explore"></a>
 ## ↗ 打开工作台 <sub>Explore</sub>
