@@ -35,58 +35,79 @@ def collect():
     return profile, repos
 
 
-def render(profile, repos, stamp):
+def calendar():
+    query = """query($login:String!) { user(login:$login) { contributionsCollection {
+      contributionCalendar { totalContributions weeks { contributionDays { date contributionCount } } }
+    } } }"""
+    token = os.environ.get("GITHUB_TOKEN")
+    if not token:
+        raise RuntimeError("GITHUB_TOKEN required for contribution history")
+    req = urllib.request.Request("https://api.github.com/graphql",
+        data=json.dumps({"query": query, "variables": {"login": USER}}).encode(),
+        headers={"Authorization": "Bearer " + token, "Content-Type": "application/json",
+                 "User-Agent": "profile-dashboard"})
+    with urllib.request.urlopen(req, timeout=30) as response:
+        result = json.load(response)
+    if result.get("errors") or not result.get("data", {}).get("user"):
+        raise RuntimeError("Contribution API did not return a complete result")
+    return result["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+
+
+def summarize(cal):
+    days = [d for w in cal["weeks"] for d in w["contributionDays"]]
+    if not days:
+        raise ValueError("Missing contribution dates")
+    counts, seen = Counter(), set()
+    for day in days:
+        date, value = day["date"], day["contributionCount"]
+        datetime.strptime(date, "%Y-%m-%d")
+        if date in seen or not isinstance(value, int) or value < 0:
+            raise ValueError("Invalid contribution day")
+        seen.add(date)
+        counts[date[:7]] += value
+    if sum(counts.values()) != cal["totalContributions"]:
+        raise ValueError("Contribution totals do not reconcile")
+    return sorted(counts.items()), sum(d["contributionCount"] > 0 for d in days), min(seen), max(seen)
+
+
+def render(profile, repos, cal, stamp):
+    months, active, first, last = summarize(cal)
     original = [r for r in repos if not r["fork"]]
-    languages = Counter(r["language"] for r in original if r.get("language"))
-    recent = sorted((r for r in original if r["name"].lower() != USER.lower()),
-                    key=lambda r: r.get("pushed_at") or "", reverse=True)[:3]
-    parts = ['<svg xmlns="http://www.w3.org/2000/svg" width="960" height="410" viewBox="0 0 960 410" role="img" aria-labelledby="title desc">',
-             '<title id="title">Dylan — GitHub public repository dashboard</title>',
-             '<desc id="desc">Public repository counts, stars on non-fork repositories, followers, primary languages by repository count, and latest repository push dates.</desc>',
-             '<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#24292f}.muted{fill:#57606a}.label{font-size:12px;letter-spacing:1px}.small{font-size:12px}.value{font-size:34px;font-weight:650}.name{font-size:14px;font-weight:600}</style>',
-             '<rect x="1" y="1" width="958" height="408" rx="18" fill="#ffffff" stroke="#d8dee4"/>',
-             '<text x="28" y="34" class="label">GITHUB / PUBLIC SNAPSHOT</text>',
-             f'<text x="932" y="34" text-anchor="end" class="small muted">Updated {escape(stamp)} UTC</text>',
-             '<path d="M28 54H932M28 164H932" stroke="#eaeef2"/>']
-    metrics = [(len(original), "NON-FORK REPOS"),
-               (len(repos)-len(original), "FORKS"),
-               (sum(r["stargazers_count"] for r in original), "STARS · NON-FORK"),
-               (profile["followers"], "FOLLOWERS")]
-    for i, (value, label) in enumerate(metrics):
-        x = 28 + i * 234
-        parts += [f'<text x="{x}" y="108" class="value">{value:,}</text>',
-                  f'<text x="{x}" y="137" class="label muted">{label}</text>']
-    parts += ['<text x="28" y="198" class="label">PRIMARY LANGUAGES</text>',
-              '<text x="496" y="198" class="label">RECENT REPOSITORY PUSHES</text>']
-    top = languages.most_common(4)
-    if not top:
-        parts.append('<text x="28" y="234" class="small muted">No language data available.</text>')
-    for i, (language, count) in enumerate(top):
-        y = 230 + i * 31
-        width = round(220 * count / max(languages.values()), 1)
-        parts += [f'<text x="28" y="{y}" class="small">{escape(language)}</text>',
-                  f'<rect x="150" y="{y-10}" width="220" height="8" rx="4" fill="#eaeef2"/>',
-                  f'<rect x="150" y="{y-10}" width="{width}" height="8" rx="4" fill="#6e7781"/>',
-                  f'<text x="410" y="{y}" text-anchor="end" class="small muted">{count}</text>']
-    for i, repo in enumerate(recent):
-        y = 230 + i * 44
-        name = repo["name"]
-        label = name if len(name) <= 44 else name[:41] + "..."
-        date = (repo.get("pushed_at") or "unknown")[:10]
-        parts += [f'<text x="496" y="{y}" class="name">{escape(label)}</text>',
-                  f'<text x="496" y="{y+18}" class="small muted">{escape(date)} · {escape(repo.get("language") or "No primary language")}</text>']
-    if not recent:
-        parts.append('<text x="496" y="234" class="small muted">No repositories available.</text>')
-    parts += ['<path d="M28 353H932" stroke="#eaeef2"/>',
-              '<text x="28" y="378" class="small muted">Source: GitHub public API · Languages counted by non-fork repository, not code volume or skill.</text>',
-              '<text x="28" y="395" class="small muted">Push dates describe repository updates, not personal contributions. Profile repository excluded from recent list.</text>',
-              '</svg>']
+    stars = sum(r["stargazers_count"] for r in original)
+    total = cal["totalContributions"]
+    parts = ['<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="title desc">',
+      '<title id="title">Dylan — GitHub contribution timeline</title>',
+      f'<desc id="desc">{first} to {last}: {total} contributions on {active} active days. Monthly totals; partial first and last months. Counts reflect GitHub API visibility.</desc>',
+      '<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;fill:#263e3b}.muted{fill:#697a75}.small{font-size:14px}.label{font-size:16px}.mono{font-family:ui-monospace,monospace;letter-spacing:1px}</style>',
+      '<rect x="1" y="1" width="958" height="338" rx="20" fill="#f7faf8" stroke="#dce6df"/>',
+      '<text x="28" y="38" class="label mono">THE MAKING LOG</text>',
+      f'<text x="932" y="38" text-anchor="end" class="small muted">Updated {escape(stamp)} UTC</text>',
+      f'<text x="28" y="125" font-size="64" font-weight="650">{total:,}</text>',
+      '<text x="30" y="155" class="label">过去一年 · GitHub 贡献</text>',
+      f'<text x="30" y="200" font-size="26" font-weight="600">{active}</text>',
+      '<text x="85" y="200" class="label muted">个活跃日</text>',
+      f'<text x="30" y="244" class="small muted">{len(original)} 非 Fork 公开仓库 · {stars} Stars</text>',
+      '<path d="M268 76V264" stroke="#dce6df"/>']
+    top = max(1, max(v for _, v in months))
+    for ratio in (0, 0.5, 1):
+        y = 252 - 140 * ratio
+        parts.append(f'<path d="M306 {y}H930" stroke="#dce6df" stroke-dasharray="3 5"/>')
+    step = 624 / len(months)
+    for i, (month, value) in enumerate(months):
+        x, width = 312 + step * i, step - 12
+        height = 140 * value / top
+        fill = "#d58165" if i == len(months)-1 else "#4f877c"
+        parts += [f'<rect x="{x:.2f}" y="{252-height:.2f}" width="{width:.2f}" height="{height:.2f}" rx="4" fill="{fill}"><title>{month}: {value} contributions</title></rect>',
+          f'<text x="{x+width/2:.2f}" y="{max(93,243-height):.2f}" text-anchor="middle" class="small">{value}</text>',
+          f'<text x="{x+width/2:.2f}" y="275" text-anchor="middle" class="small muted">{month[5:]}</text>']
+    parts += ['<text x="306" y="83" class="label">贡献记录 / 按月汇总</text>',
+      f'<text x="30" y="311" class="small muted">{first} — {last} · 首尾月份为部分月份 · 来源：GitHub API</text>', '</svg>']
     return "\n".join(parts) + "\n"
 
 
 def main():
     profile, repos = collect()
-    svg = render(profile, repos, datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"))
+    svg = render(profile, repos, calendar(), datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"))
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(svg, encoding="utf-8")
 
