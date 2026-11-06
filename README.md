@@ -14,8 +14,10 @@
 
 [正在探索](#on-the-desk) &nbsp; / &nbsp; [技能与工具](#skills) &nbsp; / &nbsp; [打开工作台](#explore) &nbsp; / &nbsp; [创作轨迹](#making-log) &nbsp; / &nbsp; [交流](#connect)
 
+<br />
+
 <a id="on-the-desk"></a>
-## ✦ 正在探索 <sub>On the desk</sub>
+## 01 · 正在探索 <sub>On the desk</sub>
 
 - **让角色有来处。** 从世界设定和玩家行为，推导角色身份、服装与随身工具。
 - **让资产说同一种语言。** 将轮廓、材质与视觉符号，延伸到道具、图标和场景模块。
@@ -32,30 +34,46 @@
 
 </details>
 
-<a id="skills"></a>
-## ⌘ 技能与工具 <sub>Skills & Tools</sub>
+<br />
 
-![Product Design](https://img.shields.io/badge/Product%20Design-387b6b?style=flat-square)
-![AI Game Art](https://img.shields.io/badge/AI%20Game%20Art-7d648a?style=flat-square)
-![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-7d648a?style=flat-square)
-![AI Coding](https://img.shields.io/badge/AI%20Coding-293e3b?style=flat-square)
-![Workflow Automation](https://img.shields.io/badge/Workflow%20Automation-387b6b?style=flat-square)
-![Skills](https://img.shields.io/badge/Skills-7d648a?style=flat-square)
-![MCP](https://img.shields.io/badge/MCP-387b6b?style=flat-square)
-![Codex](https://img.shields.io/badge/Codex-293e3b?style=flat-square)
-![Claude](https://img.shields.io/badge/Claude-b46e56?style=flat-square)
+<a id="skills"></a>
+## 02 · 技能与工具 <sub>Skills & Tools</sub>
+
+<p>
+  <sub><strong>设计与创作</strong> · Design & Creation</sub><br />
+  <img src="./assets/skill-product-design.svg" width="131" height="30" alt="Product Design" />
+  <img src="./assets/skill-ai-game-art.svg" width="109" height="30" alt="AI Game Art" />
+  <img src="./assets/skill-prompt-engineering.svg" width="160" height="30" alt="Prompt Engineering" />
+</p>
+
+<p>
+  <sub><strong>AI 工作流</strong> · AI Workflows</sub><br />
+  <img src="./assets/skill-ai-coding.svg" width="95" height="30" alt="AI Coding" />
+  <img src="./assets/skill-workflow-automation.svg" width="167" height="30" alt="Workflow Automation" />
+  <img src="./assets/skill-skills.svg" width="73" height="30" alt="Skills" />
+  <img src="./assets/skill-mcp.svg" width="52" height="30" alt="MCP" />
+</p>
+
+<p>
+  <sub><strong>常用工具</strong> · Daily Tools</sub><br />
+  <img src="./assets/skill-codex.svg" width="66" height="30" alt="Codex" />
+  <img src="./assets/skill-claude.svg" width="73" height="30" alt="Claude" />
+</p>
+
+<br />
 
 <a id="explore"></a>
-## ↗ 打开工作台 <sub>Explore</sub>
+## 03 · 打开工作台 <sub>Explore</sub>
 
-**[公开项目](https://github.com/QiOrange-qior?tab=repositories&type=source)**  
-浏览已有的代码、工具与实验。
+<p>
+  <a href="https://github.com/QiOrange-qior?tab=repositories&amp;type=source"><img src="./assets/explore-projects.svg" width="360" alt="公开项目：浏览已有的代码、工具与实验。" /></a>
+  <a href="https://github.com/QiOrange-qior?tab=stars"><img src="./assets/explore-stars.svg" width="360" alt="灵感收藏：看看我关注的开源项目与工具。" /></a>
+</p>
 
-**[灵感收藏](https://github.com/QiOrange-qior?tab=stars)**  
-看看我关注的开源项目与工具。
+<br />
 
 <a id="making-log"></a>
-## ◷ 创作轨迹 <sub>The making log</sub>
+## 04 · 创作轨迹 <sub>The making log</sub>
 
 <a href="https://github.com/QiOrange-qior?tab=overview">
   <img src="./assets/github-dashboard.svg" width="100%" alt="过去一年 GitHub 贡献记录：贡献总数、活跃日和逐月贡献数量；完整日期与更新时间见图中。" />

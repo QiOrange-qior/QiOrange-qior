@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="128" viewBox="0 0 360 128" role="img" aria-labelledby="title desc">
+<title id="title">灵感收藏</title><desc id="desc">看看我关注的开源项目与工具。点击打开灵感收藏。</desc>
+<rect x="0.5" y="0.5" width="359" height="127" rx="16" fill="#f3edf5" stroke="#ddd0e2"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif"><text x="22" y="26" font-size="10" letter-spacing="1.5" fill="#7d648a">INSPIRATION</text>
+<text x="22" y="58" font-size="22" font-weight="600" fill="#293e3b">灵感收藏</text>
+<text x="22" y="83" font-size="13" fill="#63746e">看看我关注的开源项目与工具。</text>
+<text x="22" y="109" font-size="11" fill="#7d648a">打开灵感收藏 ↗</text></g>
+<g fill="none" stroke="#7d648a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.65"><path d="m321 47 5 13 14 1-11 9 3 14-11-7-12 7 3-14-10-9 14-1z"/></g>
+</svg>

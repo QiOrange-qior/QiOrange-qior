@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="128" viewBox="0 0 360 128" role="img" aria-labelledby="title desc">
+<title id="title">公开项目</title><desc id="desc">浏览已有的代码、工具与实验。点击打开项目列表。</desc>
+<rect x="0.5" y="0.5" width="359" height="127" rx="16" fill="#eef4ef" stroke="#cbdccf"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif"><text x="22" y="26" font-size="10" letter-spacing="1.5" fill="#387b6b">PROJECTS</text>
+<text x="22" y="58" font-size="22" font-weight="600" fill="#293e3b">公开项目</text>
+<text x="22" y="83" font-size="13" fill="#63746e">浏览已有的代码、工具与实验。</text>
+<text x="22" y="109" font-size="11" fill="#387b6b">打开项目列表 ↗</text></g>
+<g fill="none" stroke="#387b6b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.65"><path d="m312 58-9 9 9 9m20-18 9 9-9 9m-4-22-9 32"/></g>
+</svg>
