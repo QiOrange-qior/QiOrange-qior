@@ -81,12 +81,11 @@
 
 <sub>GitHub 活动按月汇总，每日更新；首尾月份可能不完整。数据反映 GitHub API 可见的贡献记录，不代表全部创作活动。 [更新状态](https://github.com/QiOrange-qior/QiOrange-qior/actions/workflows/profile-dashboard.yml)</sub>
 
+<br />
+
 <a id="connect"></a>
----
-
-**一起聊聊，怎样让一个创意长成一个世界。**  
-AI 游戏美术 · 创意素材 · 视频与 3D · 创作工具与产品
-
-[在 GitHub 找到我 ↗](https://github.com/QiOrange-qior)
+<p>
+  <a href="https://github.com/QiOrange-qior"><img src="./assets/connect-banner.svg" width="100%" alt="一起聊聊，怎样让一个创意长成一个世界。AI 游戏美术、创意素材、视频与 3D、创作工具与产品。在 GitHub 找到我 ↗" /></a>
+</p>
 
 <sub>Dylan / 气橙 · Imagine. Design. Make it play.</sub>

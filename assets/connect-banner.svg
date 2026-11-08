@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="264" viewBox="0 0 720 264" role="img" aria-labelledby="title desc">
+<title id="title">一起聊聊，怎样让一个创意长成一个世界。</title>
+<desc id="desc">AI 游戏美术、创意素材、视频与 3D、创作工具与产品。点击在 GitHub 找到 Dylan / 气橙。</desc>
+<defs>
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#e1dfd7"/></pattern>
+  <clipPath id="panel"><rect x="1" y="1" width="718" height="262" rx="22"/></clipPath>
+</defs>
+<rect x="1" y="1" width="718" height="262" rx="22" fill="#fbf8f2" stroke="#e3dfd6"/>
+<path d="M534 1H720V264H534Z" fill="url(#grid)" clip-path="url(#panel)"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif">
+  <text x="32" y="34" font-size="11" letter-spacing="2" fill="#387b6b">LET’S CREATE</text>
+  <text x="30" y="80" font-size="32" font-weight="650" fill="#293e3b">一起聊聊，</text>
+  <text x="30" y="121" font-size="28" font-weight="600" fill="#293e3b">怎样让一个创意长成一个世界。</text>
+  <text x="32" y="155" font-size="16" fill="#63746e">AI 游戏美术 · 创意素材 · 视频与 3D · 创作工具与产品</text>
+  <rect x="32" y="191" width="204" height="42" rx="9" fill="#e1eee7" stroke="#bdd4c7"/>
+  <text x="49" y="218" font-size="16" font-weight="500" fill="#315f50">在 GitHub 找到我</text>
+</g>
+<path d="M207 216l9-9m-9 0h9v9" fill="none" stroke="#387b6b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(569 35) rotate(6 52 38)">
+  <rect width="106" height="80" rx="10" fill="#eee7f1" stroke="#c6b9cc"/>
+  <path d="M22 20h60v36H49L37 66V56H22Z" fill="#fffefd" stroke="#7d648a" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M33 32h38M33 43h24" stroke="#b4a1bf" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g fill="none" stroke="#b46e56" stroke-width="1.7" stroke-linecap="round"><path d="M684 24v14m-7-7h14"/></g>
+<path d="M279 212H672" stroke="#dfded4"/>
+<g fill="#d58165"><path d="m309 207 5 5-5 5-5-5zM441 207l5 5-5 5-5-5zM627 207l5 5-5 5-5-5z"/></g>
+</svg>
